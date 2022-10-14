@@ -1,0 +1,50 @@
+
+$dark: #000000;
+
+$primary-yellow: #FFE14D;
+$secondary-yellow: #FFBD12;
+$secondary-yellow-light: #FFF7E2;
+$primary-yellow-light: #FFF6CC;
+
+$primary-blue: #10083F;
+$secondary-blue: #0183D4;
+$secondary-blue-light: #EAF4FF;
+
+$primary-grey: #504D64;
+$secondary-grey: #858295;
+$tertiary-grey: #DDEFFF;
+$quaternary-grey: #EBEBEB;
+
+$primary-purple: #9E66FF;
+$secondary-purple: #F3ECFF;
+
+$primary-green: #61CA45;
+$secondary-green: #DFF7D9;
+
+@mixin txtTitle {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: $primary-blue;
+}
+
+@mixin smallText {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: $primary-grey;
+}
+
+@mixin navLinks {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: $primary-blue;
+}
+
+@mixin darkText {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: $dark;
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "cardTitle": "Будь первым",
+    "cardDescription": "Ты первым увидишь наши новые продукты и поучаствуешь в их разработке ",
+    "cardImg": "src/assets/img/Feature-1.svg",
+    "cardClass": "firstCard"
+  },
+  {
+    "id": 2,
+    "cardTitle": "Поделись опытом",
+    "cardDescription": "Будем рады узнать о твоем опыте использования наших продуктов ",
+    "cardImg": "src/assets/img/Feature-2.svg",
+    "cardClass": "secondCard"
+  },
+  {
+    "id": 3,
+    "cardTitle": "Получи уникальную ачивку",
+    "cardDescription": "Блестящая, свеженькая и такая уникальная ачивка в приложении “Мой Билайн”",
+    "cardImg": "src/assets/img/Feature-3.svg",
+    "cardClass": "thirdCard"
+  }
+]

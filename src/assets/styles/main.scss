@@ -1,0 +1,22 @@
+@import "./variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+  body {
+    width: 100%;
+  }
+}
+
+
