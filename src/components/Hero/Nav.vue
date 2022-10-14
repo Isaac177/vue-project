@@ -17,7 +17,7 @@ export default {
 
 }
 </script>
-
+<!--Routes maybe removed-->
 <template>
   <nav class="navBar">
     <div class="logo">
