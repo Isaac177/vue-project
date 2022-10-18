@@ -1,22 +1,3 @@
-<script>
-import MissionText from "../components/Mission/MissionText.vue";
-import Text from "../assets/data/Text.json";
-import YellowBtn from "../components/Buttons/YellowBtn.vue";
-export default {
-  name: "Mission",
-  components: {YellowBtn, MissionText},
-
-  data() {
-    return {
-      missionTitle: "Наша миссия",
-      Text,
-      btnLink: "https://docs.google.com/forms/d/e/1FAIpQLSfm_Yj07urIb_fF0mTRGZgl5DWt5lC2qYd4TngwXWMgMHiYMg/viewform?usp=sf_link",
-      btnText: "Присоединиться",
-    }
-  }
-}
-</script>
-
 <template>
   <div class="mission__container">
     <div class="mission__img">
@@ -38,6 +19,25 @@ export default {
     </div>
   </div>
 </template>
+
+<script>
+import MissionText from "../components/Mission/MissionText.vue";
+import Text from "../assets/data/Text.json";
+import YellowBtn from "../components/Buttons/YellowBtn.vue";
+export default {
+  name: "Mission",
+  components: {YellowBtn, MissionText},
+
+  data() {
+    return {
+      missionTitle: "Наша миссия",
+      Text,
+      btnLink: "https://docs.google.com/forms/d/e/1FAIpQLSfm_Yj07urIb_fF0mTRGZgl5DWt5lC2qYd4TngwXWMgMHiYMg/viewform?usp=sf_link",
+      btnText: "Присоединиться",
+    }
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 @import "../assets/styles/variables.scss";

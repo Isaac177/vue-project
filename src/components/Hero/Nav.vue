@@ -1,22 +1,3 @@
-
-<script>
-
-export default {
-  name: "Nav",
-
-  data(){
-    return {
-      isToggleOpen: false,
-    }
-  },
-  methods: {
-    toggleMobile() {
-      this.isToggleOpen = !this.isToggleOpen;
-    }
-  }
-
-}
-</script>
 <!--Routes maybe removed-->
 <template>
   <nav class="navBar">
@@ -74,6 +55,23 @@ export default {
   </div>
 </template>
 
+<script>
+
+export default {
+  name: "Nav",
+
+  data(){
+    return {
+      isToggleOpen: false,
+    }
+  },
+  methods: {
+    toggleMobile() {
+      this.isToggleOpen = !this.isToggleOpen;
+    }
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 @import "../../assets/styles/variables.scss";

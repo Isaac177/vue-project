@@ -1,4 +1,22 @@
 
+<template>
+  <div class="howTo">
+    <div class="howToTitleContainer">
+      <h2 class="howTo__title">{{title}}</h2>
+    </div>
+    <div class="howTo__grid">
+      <HowToTemplate
+        v-for="info in Infos"
+        :howToNumber="info.id"
+        :howToTitle="info.title"
+        :howToText="info.text"
+        :class="info.class"
+        :isFirst="info.id === 1"
+      />
+    </div>
+  </div>
+</template>
+
 <script>
 import HowToTemplate from "../components/HowTo/HowToTemplate.vue";
 import Infos from "../assets/data/Infos.json";
@@ -17,24 +35,6 @@ export default {
   },
 }
 </script>
-
-<template>
-  <div class="howTo">
-    <div class="howToTitleContainer">
-      <h2 class="howTo__title">{{title}}</h2>
-    </div>
-    <div class="howTo__grid">
-      <HowToTemplate
-        v-for="info in Infos"
-        :howToNumber="info.id"
-        :howToTitle="info.title"
-        :howToText="info.text"
-        :class="info.class"
-        :isFirst="info.id === 1"
-      />
-    </div>
-  </div>
-</template>
 
 <style lang="scss" scoped>
 @import "../assets/styles/variables.scss";

@@ -1,3 +1,10 @@
+<template v-scroll-animation>
+  <div class="overview" id="overview">
+    <h1 class="overview__title">{{ overviewTitle }}</h1>
+    <p class="overview__text">{{overviewText}}</p>
+  </div>
+
+</template>
 
 <script>
 export default {
@@ -10,14 +17,6 @@ export default {
 
 }
 </script>
-
-<template v-scroll-animation>
-  <div class="overview" id="overview">
-    <h1 class="overview__title">{{ overviewTitle }}</h1>
-    <p class="overview__text">{{overviewText}}</p>
-  </div>
-
-</template>
 
 <style lang="scss" scoped>
 @import "../assets/styles/variables.scss";

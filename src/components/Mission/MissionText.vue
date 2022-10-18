@@ -1,3 +1,15 @@
+<template>
+<div class="missionText">
+    <div class="missionText__title">
+        <h2>{{missionTitle}}</h2>
+    </div>
+    <div class="missionText__text">
+        <p>{{missionFirstParagraph}}</p>
+        <p>{{missionSecondParagraph}}</p>
+        <p>{{missionThirdParagraph}}</p>
+    </div>
+  </div>
+</template>
 
 <script>
 export default {
@@ -23,19 +35,6 @@ export default {
   }
 }
 </script>
-
-<template>
-<div class="missionText">
-    <div class="missionText__title">
-        <h2>{{missionTitle}}</h2>
-    </div>
-    <div class="missionText__text">
-        <p>{{missionFirstParagraph}}</p>
-        <p>{{missionSecondParagraph}}</p>
-        <p>{{missionThirdParagraph}}</p>
-    </div>
-  </div>
-</template>
 
 <style lang="scss" scoped>
 @import "../../assets/styles/variables.scss";

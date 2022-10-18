@@ -1,22 +1,3 @@
-
-<script>
-import Card from "../components/HowTo/Card.vue";
-import Cards from "../assets/data/Cards.json";
-export default {
-  name: "Features",
-  components: {
-    Card,
-  },
-
-  data() {
-    return {
-      Cards,
-      cardBigTitle: "Какие плюсы?",
-    };
-  },
-}
-</script>
-
 <template>
   <div class="features">
     <div class="titleContainer">
@@ -35,6 +16,24 @@ export default {
 
   </div>
 </template>
+
+<script>
+import Card from "../components/HowTo/Card.vue";
+import Cards from "../assets/data/Cards.json";
+export default {
+  name: "Features",
+  components: {
+    Card,
+  },
+
+  data() {
+    return {
+      Cards,
+      cardBigTitle: "Какие плюсы?",
+    };
+  },
+}
+</script>
 
 <style lang="scss" scoped>
 @import "../assets/styles/variables.scss";

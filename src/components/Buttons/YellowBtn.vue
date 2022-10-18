@@ -1,15 +1,15 @@
 
-<script>
-export default {
-  name: "YellowBtn"
-}
-</script>
-
 <template>
   <button class="yellowBtn">
     <slot></slot>
   </button>
 </template>
+
+<script>
+export default {
+  name: "YellowBtn"
+}
+</script>
 
 <style lang="scss" scoped>
 @import "../../assets/styles/variables.scss";

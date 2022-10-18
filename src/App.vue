@@ -1,3 +1,20 @@
+
+<template>
+  <Hero
+    :title="title"
+    :btnText="btnText"
+    :btnLink="btnLink"
+  />
+  <Overview
+    :overviewTitle="overviewTitle"
+    :overviewText="overviewText"
+  />
+  <Features />
+  <HowTo />
+  <Mission />
+
+</template>
+
 <script>
 import Hero from "./views/Hero.vue";
 import HowTo from "./views/HowTo.vue";
@@ -25,22 +42,6 @@ export default {
 }
 
 </script>
-
-<template>
-  <Hero
-    :title="title"
-    :btnText="btnText"
-    :btnLink="btnLink"
-  />
-  <Overview
-    :overviewTitle="overviewTitle"
-    :overviewText="overviewText"
-  />
-  <Features />
-  <HowTo />
-  <Mission />
-
-</template>
 
 <style scoped>
 

@@ -1,4 +1,22 @@
 
+<template>
+    <div class="heroCnt">
+      <div class="heroCnt__left">
+        <h1>{{title}}</h1>
+        <p>
+          Мы хотим услышать твое мнение, опыт
+          и боли общения с цифровыми продуктами Beeline.
+        </p>
+        <YellowBtn>
+          <a :href="btnLink" class="btnTxt">{{btnText}}</a>
+        </YellowBtn>
+      </div>
+      <div class="heroCnt__right">
+        <img :src="heroImg" alt="heroImg" />
+      </div>
+    </div>
+</template>
+
 <script>
 import Nav from "./Nav.vue";
 import HeroImg from '../../assets/img/HeroImg.svg';
@@ -26,24 +44,6 @@ export default {
   },
 }
 </script>
-
-<template>
-    <div class="heroCnt">
-      <div class="heroCnt__left">
-        <h1>{{title}}</h1>
-        <p>
-          Мы хотим услышать твое мнение, опыт
-          и боли общения с цифровыми продуктами Beeline.
-        </p>
-        <YellowBtn>
-          <a :href="btnLink" class="btnTxt">{{btnText}}</a>
-        </YellowBtn>
-      </div>
-      <div class="heroCnt__right">
-        <img :src="heroImg" alt="heroImg" />
-      </div>
-    </div>
-</template>
 
 <style lang="scss" scoped>
 @import "../../assets/styles/variables.scss";

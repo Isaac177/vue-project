@@ -1,3 +1,13 @@
+<template>
+  <span class="howToLink">
+    <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSfm_Yj07urIb_fF0mTRGZgl5DWt5lC2qYd4TngwXWMgMHiYMg/viewform?usp=sf_link" target="_blank"
+        style="color: #0C4DCE"
+    >
+      {{text}}
+    </a>
+  </span>
+</template>
 
 <script>
 export default {
@@ -11,17 +21,6 @@ export default {
   }
 }
 </script>
-
-<template>
-  <span class="howToLink">
-    <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLSfm_Yj07urIb_fF0mTRGZgl5DWt5lC2qYd4TngwXWMgMHiYMg/viewform?usp=sf_link" target="_blank"
-        style="color: #0C4DCE"
-    >
-      {{text}}
-    </a>
-  </span>
-</template>
 
 <style scoped>
 

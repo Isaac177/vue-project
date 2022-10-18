@@ -1,3 +1,11 @@
+<template>
+  <header class="header">
+    <div class="headerContainer">
+      <Nav />
+      <HeroCnt />
+    </div>
+  </header>
+</template>
 
 <script>
 import HeroCnt from "../components/Hero/HeroCnt.vue";
@@ -7,15 +15,6 @@ export default {
   components: {Nav, HeroCnt}
 }
 </script>
-
-<template>
-  <header class="header">
-    <div class="headerContainer">
-      <Nav />
-      <HeroCnt />
-    </div>
-  </header>
-</template>
 
 <style lang="scss" scoped>
 @import "../assets/styles/variables.scss";

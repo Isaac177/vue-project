@@ -1,3 +1,19 @@
+<template>
+  <div class="howTo__grid__box">
+    <div class="howTo__grid__box__number">
+      <h1>{{howToNumber}}</h1>
+    </div>
+    <div class="howTo__grid__box__text">
+      <h3 class="howTo__grid__box__text__title">
+        {{howToTitle}}
+        <span v-if="isFirst" class="howTo__grid__box__text__title__link">
+          <HowToLink text="заявку"/>
+        </span>
+      </h3>
+      <p class="howTo__grid__box__text__description">{{howToText}}</p>
+    </div>
+  </div>
+</template>
 
 <script>
 import HowToLink from "./HowToLink.vue";
@@ -26,23 +42,6 @@ export default {
   }
 }
 </script>
-
-<template>
-  <div class="howTo__grid__box">
-    <div class="howTo__grid__box__number">
-      <h1>{{howToNumber}}</h1>
-    </div>
-    <div class="howTo__grid__box__text">
-      <h3 class="howTo__grid__box__text__title">
-        {{howToTitle}}
-        <span v-if="isFirst" class="howTo__grid__box__text__title__link">
-          <HowToLink text="заявку"/>
-        </span>
-      </h3>
-      <p class="howTo__grid__box__text__description">{{howToText}}</p>
-    </div>
-  </div>
-</template>
 
 <style lang="scss" scoped>
 @import "../../assets/styles/variables.scss";

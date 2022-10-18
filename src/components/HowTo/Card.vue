@@ -1,4 +1,16 @@
 
+<template>
+  <div class="card">
+    <div class="card__img">
+      <img :src="cardImg" alt="img">
+    </div>
+    <div class="card__text">
+      <h3 class="card__title">{{ cardTitle }}</h3>
+      <p class="card__description">{{ cardDescription }}</p>
+    </div>
+  </div>
+</template>
+
 <script>
 export default {
   name: "Card",
@@ -19,18 +31,6 @@ export default {
   }
 }
 </script>
-
-<template>
-  <div class="card">
-    <div class="card__img">
-      <img :src="cardImg" alt="img">
-    </div>
-    <div class="card__text">
-      <h3 class="card__title">{{ cardTitle }}</h3>
-      <p class="card__description">{{ cardDescription }}</p>
-    </div>
-  </div>
-</template>
 
 <style lang="scss" scoped>
 @import "../../assets/styles/variables.scss";
